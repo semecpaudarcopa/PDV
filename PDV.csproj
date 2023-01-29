@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FAAC54-1F65-4F7B-A33F-87BAC2EC4FE5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PDV</RootNamespace>
+    <AssemblyName>PDV</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\..\Documents\Bunifu UI WinForms 5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>..\..\..\Documents\Bunifu UI WinForms 5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\..\Documents\Bunifu UI WinForms v1.11.5.21 + Dataviz Advanced v1.1.1.5 + Activator\Bunifu UI WinForms 1.11.5.21\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\..\..\Documents\Bunifu UI WinForms 5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextBox">
+      <HintPath>..\..\..\Documents\Bunifu UI WinForms 5.0.3\ui.winforms.5.0.3\Bunifu.UI.WinForms.BunifuTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\Documents\Bunifu UI WinForms v1.11.5.21 + Dataviz Advanced v1.1.1.5 + Activator\Bunifu UI WinForms 1.11.5.21\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Devart.Data, Version=5.0.2458.0, Culture=neutral, PublicKeyToken=09af7300eec23701" />
+    <Reference Include="Devart.Data.Universal, Version=3.80.2163.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.37, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\Documents\Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\Documents\Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna UI Activation\Guna UI Activation\bin\Debug\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2022.1.118.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.UI, Version=2022.1.118.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2022.1.118.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cadastros\FrmCargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastros\FrmCargos.Designer.cs">
+      <DependentUpon>FrmCargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastros\FrmFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastros\FrmFornecedores.Designer.cs">
+      <DependentUpon>FrmFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastros\frmFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastros\frmFuncionarios.Designer.cs">
+      <DependentUpon>frmFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastros\FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastros\FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexao.cs" />
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastros\FrmProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastros\FrmProdutos.Designer.cs">
+      <DependentUpon>FrmProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="cadastros\FrmCargos.resx">
+      <DependentUpon>FrmCargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastros\FrmFornecedores.resx">
+      <DependentUpon>FrmFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastros\frmFuncionarios.resx">
+      <DependentUpon>frmFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastros\FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastros\FrmProdutos.resx">
+      <DependentUpon>FrmProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workers35.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastroProduto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Business  Money bag.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analytics_finance_35.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Business Flat_expanded_05 Money bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cargos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caj2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Business Linear color_expanded_07 Calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caja2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clientes.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\131507_hacker_administrator_system_sys_hack_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cargos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fornecedor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone-produtos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadastroProdutos %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Business Flat_expanded_14 Time and money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nova venda.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entra e saida %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gastos34px.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relproduto34px.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relvendas32px.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relmo4px.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move_stock_40px.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relatorio.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ico.ico" />
+    <None Include="Resources\SemFotos.jpg" />
+    <None Include="Resources\Clientes %282%29.bmp" />
+    <None Include="Resources\delete_48px.bmp" />
+    <None Include="Resources\author-48.png" />
+    <None Include="Resources\save_48px.bmp" />
+    <None Include="Resources\new_copy_64px.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
